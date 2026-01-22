@@ -5,10 +5,27 @@
   max-width: 1440px;
   padding: 9rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: var(--theme-color);
-  text-align: left;
+  text-align: center;
+  position: relative; /* Brings content to the front */
+  z-index: 1; /* Ensures content is above the blurred background */
+  /* Add styling for your content (e.g., centering, padding, etc.) */
+}
+
+.bgImage{
+  background-size: cover;
+  background-position: center;
+  filter: blur(2.4px);
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  top: 65px;
+  left: 0;
+  position: absolute;
+  padding: 20px;
+  z-index: -1;
 }
 
 

@@ -10,7 +10,7 @@ const ListElement = ({Logo, name, showName})=>{
       <Tooltip arrow title={
         <h6 className={s.tooltip}>{name}</h6>
       } >
-      <a> <Logo /> </a>
+      <Logo />
       </Tooltip>
     </Grid>
   );

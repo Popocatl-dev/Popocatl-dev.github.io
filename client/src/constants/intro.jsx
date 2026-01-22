@@ -4,7 +4,7 @@ export const MAIN = {
     presentation : (mainName) => ( <> 
     I'M
     <strong className={mainName}>  JESUS POPOCATL</strong></> ),
-    profesion: ["Game Developer", "Software Developer", "Technical Artist"],
+    profesion: ["Software Engineer","Game Developer", "Technical Artist"],
     resumeButton : ( <> View Resume</> ),
     projectButton:  ( <> View Projects</> ),
   },
@@ -13,7 +13,7 @@ export const MAIN = {
     presentation : (mainName) => (<> 
     Soy
     <strong className={mainName}> JESUS POPOCATL</strong></> ),
-    profesion: ["Game Developer", "Software Developer", "Technical Artist"],
+    profesion: ["Software Engineer","Game Developer", "Technical Artist"],
     resumeButton : ( <> Ver CV </> ),
     projectButton:  ( <> Ver Proyectos</> ),
   }

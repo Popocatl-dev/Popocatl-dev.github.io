@@ -1,6 +1,6 @@
 import s from './MainSection.module.scss';
-import homeMainIcon from '../../../assets/home-main.jpg';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import homeMainIcon from '../../../assets/code-banner.jpg';
+//import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLanguage } from '../../../hooks/localHook/localHook';
 import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
 import { MAIN } from '../../../constants/intro';
@@ -11,6 +11,8 @@ const MainSection = () => {
 
   return (
     <section className={s.content}>
+      <div style={{backgroundImage: `url(${homeMainIcon})`}}  className={s.bgImage}></div>
+      
       <div className={s.header}>
         <h2 style={{ paddingBottom: 15 }} className={s.title}>
          {mainText.welcome}
@@ -28,15 +30,17 @@ const MainSection = () => {
           />
         </div>
       </div>
-
-      <LazyLoadImage
-        alt="home-img"
-        effect="blur"
-        src={homeMainIcon}
-        wrapperClassName={s.homeMainIcon}
-      />
+      
     </section>
   );
 };
 
 export default MainSection;
+
+
+/*<LazyLoadImage
+        alt="home-img"
+        effect="blur"
+        src={homeMainIcon}
+        wrapperClassName={s.homeMainIcon}
+      />*/
