@@ -6,6 +6,8 @@ import { INTRO } from '../../../constants/intro';
 
 const IntroSection = () => {
   const introText = useLanguage(INTRO);
+  let date = new Date();
+  let experience = date.getFullYear() - 2017;
   return (
     <section className={s.content}>
       <div className={s.introduction}>
@@ -15,7 +17,7 @@ const IntroSection = () => {
           </h1>
 
           <div className={s.description}>
-            {introText.description(s.purple)}
+            {introText.description(s.purple, experience)}
            
           </div>
         </div>

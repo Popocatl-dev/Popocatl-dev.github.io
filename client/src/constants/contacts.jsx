@@ -59,12 +59,12 @@ export const SOCIAL = [
     name : "itchio",
     link : "https://popocatl.itch.io",
     Icon : FaItchIo
-  },
+  }/*,
   { 
     name : "twitter",
     link : "https://twitter.com/PopocatlDev",
     Icon : AiFillTwitterCircle
-  },
+  },*/
 
 ]
  

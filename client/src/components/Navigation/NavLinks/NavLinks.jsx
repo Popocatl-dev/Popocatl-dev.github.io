@@ -1,8 +1,5 @@
 import s from './NavLinks.module.scss';
 import {
-  AiOutlineHome,
-} from 'react-icons/ai';
-import {
   FaGamepad
 } from 'react-icons/fa';
 
@@ -14,9 +11,13 @@ import { routes } from '../../../routes/BaseRoutes';
 import { NavLink } from 'react-router-dom';
 import { useLanguage } from '../../../hooks/localHook/localHook';
 import { HEADER } from '../../../constants/contacts';
+import { RESUME } from '../../../constants/resume';
+
 
 const NavLinks = () => {
   const headerText = useLanguage(HEADER);
+  const resumeText = useLanguage(RESUME);
+  
   return (
     <ul className={s.navBar}>
       <li>
@@ -34,7 +35,7 @@ const NavLinks = () => {
       </li>
 
       <li>
-        <NavLink to={routes.RESUME} activeClassName={s.active}>
+        <NavLink to={resumeText.link} target="_blank" activeClassName={s.active}>
           <CgFileDocument />
           {headerText.resume}
         </NavLink>

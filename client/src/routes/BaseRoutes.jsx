@@ -5,18 +5,16 @@ import ModalProjectCard from '../scenes/Projects/ModalProjectCard/ModalProjectCa
 //scenes
 const Home = lazy(() => import('../scenes/Home/Home'));
 const Projects = lazy(() => import('../scenes/Projects/Projects'));
-const Resume = lazy(() => import('../scenes/Resume/Resume'));
 
 export const routes = {
   HOME: '/',
   PROJECTS: '/projects',
-  PROJECT: '/project/:id',
-  RESUME: '/resume',
+  PROJECT: '/project/:id'
 };
 
 const BaseRoutes = () => {
   const location = useLocation();
-  const background = location.state?.background;
+  const background = location.state?.background
 
   return (
     <>
@@ -24,7 +22,6 @@ const BaseRoutes = () => {
         <Route path={routes.HOME} element={<Home />} />
         <Route path={routes.PROJECTS} element={<Projects />} />
         <Route path={routes.PROJECT} element={<ModalProjectCard />} />
-        <Route path={routes.RESUME} element={<Resume />} />
       </Routes>
 
       {background && (

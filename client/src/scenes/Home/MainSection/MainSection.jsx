@@ -2,6 +2,7 @@ import s from './MainSection.module.scss';
 import homeMainIcon from '../../../assets/home-main.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLanguage } from '../../../hooks/localHook/localHook';
+import Typewriter from '../../../components/UIElements/Typewriter/Typewriter';
 import { MAIN } from '../../../constants/intro';
 
 
@@ -19,8 +20,12 @@ const MainSection = () => {
           {mainText.presentation(s.mainName)}
         </h1>
 
-        <div style={{ paddingTop: 50 }}>
-          <h2 className={s.typewriterWrapper}>{mainText.profesion}</h2>
+        <div style={{ paddingTop: 20 }} className={s.typewriter}>
+          <Typewriter
+            strings={mainText.profesion}
+            wrapperClassName={s.typewriterWrapper}
+            cursorClassName={s.typewriterCursor}
+          />
         </div>
       </div>
 

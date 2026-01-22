@@ -4,7 +4,7 @@ export const MAIN = {
     presentation : (mainName) => ( <> 
     I'M
     <strong className={mainName}>  JESUS POPOCATL</strong></> ),
-    profesion: ( <> Game Developer</> ),
+    profesion: ["Game Developer", "Software Developer", "Technical Artist"],
     resumeButton : ( <> View Resume</> ),
     projectButton:  ( <> View Projects</> ),
   },
@@ -13,7 +13,7 @@ export const MAIN = {
     presentation : (mainName) => (<> 
     Soy
     <strong className={mainName}> JESUS POPOCATL</strong></> ),
-    profesion: ( <> Game Developer</> ),
+    profesion: ["Game Developer", "Software Developer", "Technical Artist"],
     resumeButton : ( <> Ver CV </> ),
     projectButton:  ( <> Ver Proyectos</> ),
   }
@@ -25,7 +25,7 @@ export const INTRO = {
       <span className={mainName}> ABOUT ME </span>{' '}
     </> ),
 
-    description: (mainName) => ( <>
+    description: (mainName, experience) => ( <>
             <p>
             I'm a game developer, establishing my career in the industry<br />
             to create and design all kind of game systems.
@@ -33,7 +33,7 @@ export const INTRO = {
 
             <p>
             I studied Computer Engineering at UNAM.Have worked as a programmer<br /> 
-            for +8 years with expertise in games and web. I have participated in the<br />
+            for +{experience} years with expertise in games and web. I have participated in the<br />
             development of games and multimedia applications for educational,<br />
             marketing and entertainment purposes for mobile and web platforms.
             </p>
@@ -50,7 +50,7 @@ export const INTRO = {
       <span className={mainName}> SOBRE MI </span>{' '}
     </> ),
     
-    description: (mainName) => ( <>
+    description: (mainName, experience) => ( <>
             <p>
             Soy Desarrollador de Videojuegos, estableciendo mi carrera<br />
             en la industria para crear y diseñar todo tipo de sistemas de juego.
@@ -58,7 +58,7 @@ export const INTRO = {
 
             <p>
             Estudie Ingeniería en Computacion en la UNAM. He trabajado como<br />
-            programador por +8 años con experiencia en juegos y web. He participado<br />
+            programador por +{experience} años con experiencia en juegos y web. He participado<br />
             en el desarrollo de juegos y aplicaciones multimedia para proyectos<br />
             educativos, de marketing y entretenimiento lanzados en móvil y web.
             </p>
