@@ -47,7 +47,7 @@ export const CONTACT = {
 export const SOCIAL = [
   { 
     name : "Github",
-    link : "https://github.com/Popocatl0",
+    link : "https://github.com/Popocatl-dev",
     Icon : AiFillGithub
   },
   { 

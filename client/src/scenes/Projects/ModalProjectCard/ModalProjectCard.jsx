@@ -18,7 +18,7 @@ const ModalProjectCard = () => {
   const labelsText = useLanguage(LABELS);
   useEffect(() => {
     toggleModal();
-  }, [toggleModal]);
+  }, []);
 
   return (
     <Modal show={isVisible} onClose={toggleModal}>

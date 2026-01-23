@@ -6,12 +6,12 @@ import { CSSTransition } from 'react-transition-group';
 import Backdrop from '../UIElements/Backdrop/Backdrop';
 
 const Modal = ({ children, show, onClose }) => {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const closeModal = (e) => {
-    onClose();
     e.stopPropagation();
-    history.goBack();
+    onClose();
+    navigate(-1);
   };
 
   useEffect(() => {

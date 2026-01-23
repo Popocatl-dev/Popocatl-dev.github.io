@@ -25,7 +25,12 @@ const BaseRoutes = () => {
       </Routes>
 
       {background && (
-        <Route path={routes.PROJECT} element={<ModalProjectCard />} />
+        <Routes>
+          <Route
+            path={routes.Project}
+            element={<ModalProjectCard />}
+          />
+        </Routes>
       )}
     </>
   );
