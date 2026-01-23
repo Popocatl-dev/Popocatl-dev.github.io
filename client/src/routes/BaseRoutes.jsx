@@ -2,9 +2,6 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Preloader from '../components/UIElements/Preloader/Preloader';
 import ModalProjectCard from '../scenes/Projects/ModalProjectCard/ModalProjectCard';
-//scenes
-const Home = lazy(() => import('../scenes/Home/Home'));
-const Projects = lazy(() => import('../scenes/Projects/Projects'));
 
 export const routes = {
   HOME: '/',
@@ -35,8 +32,8 @@ const BaseRoutes = () => {
   return (
     <>
       <Routes location={background || location}>
-        <Route path={routes.HOME} element={<Home />} />
-        <Route path={routes.PROJECTS} element={<Projects />} />
+        <Route path={routes.HOME} element={<LazyScene name={"Home"} />} />
+        <Route path={routes.PROJECTS} element={<LazyScene name={"Projects"} />} />
         <Route path={routes.PROJECT} element={<ModalProjectCard />} />
       </Routes>
 

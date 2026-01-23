@@ -1,4 +1,6 @@
-//import Particles from 'react-tsparticles';
+import { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from '@tsparticles/react';
+import { loadSlim } from "@tsparticles/slim";
 import {
   DARK_THEME_PARTICLES,
   LIGHT_THEME_PARTICLES,
@@ -6,17 +8,32 @@ import {
 import { useThemeContext } from '../../../hooks/themeHook/themeHook';
 
 const ParticlesReact = () => {
+  const [init, setInit] = useState(false);
   const { dark } = useThemeContext();
+
+  useEffect(() => {
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
+  }, []);
 
   const particles = dark
     ? DARK_THEME_PARTICLES
     : LIGHT_THEME_PARTICLES;
 
+  const particlesLoaded = (container) => {
+        console.log("particles loaded");
+  };
   return (
-      <div></div>
-    /*<Particles
-      params={{
+    <>
+    { init && <Particles
+      id="tsparticles"
+      particlesLoaded={particlesLoaded}
+      options={{
         particles: particles,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onclick: {
@@ -32,7 +49,8 @@ const ParticlesReact = () => {
         },
         retina_detect: true,
       }}
-    />*/
+    />}
+    </>
   );
 };
 
