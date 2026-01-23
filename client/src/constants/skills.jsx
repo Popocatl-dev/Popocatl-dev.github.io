@@ -1,26 +1,24 @@
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiGit,
-  DiSass,
-  DiPhp,
-  DiHtml5,
-  DiVisualstudio
-} from 'react-icons/di';
-import {
-  SiCplusplus,
-  SiPython,
-  SiUnity,
-  SiBlender,
-  SiUnrealengine,
-  SiLua,
-  SiCsharp,
-} from 'react-icons/si';
-import {
-  FaJava,
-  FaDatabase
-} from 'react-icons/fa';
+
+import{DiJavascript1} from '@react-icons/all-files/di/DiJavascript1';
+import{DiReact} from '@react-icons/all-files/di/DiReact';
+import{DiNodejs} from '@react-icons/all-files/di/DiNodejs';
+import{DiGit} from '@react-icons/all-files/di/DiGit';
+import{DiSass} from '@react-icons/all-files/di/DiSass';
+import{DiPhp} from '@react-icons/all-files/di/DiPhp';
+import{DiHtml5} from '@react-icons/all-files/di/DiHtml5';
+import{DiVisualstudio} from '@react-icons/all-files/di/DiVisualstudio';
+
+import{SiCplusplus} from '@react-icons/all-files/si/SiCplusplus';
+import{SiPython} from '@react-icons/all-files/si/SiPython';
+import{SiUnity} from '@react-icons/all-files/si/SiUnity';
+import{SiBlender} from '@react-icons/all-files/si/SiBlender';
+import{SiUnrealengine} from '@react-icons/all-files/si/SiUnrealengine';
+import{SiLua} from '@react-icons/all-files/si/SiLua';
+import{SiCsharp} from '@react-icons/all-files/si/SiCsharp';
+
+
+import {FaJava} from '@react-icons/all-files/fa/FaJava';
+import {FaDatabase} from '@react-icons/all-files/fa/FaDatabase';
 
 export const LEVEL = {
   advance : {

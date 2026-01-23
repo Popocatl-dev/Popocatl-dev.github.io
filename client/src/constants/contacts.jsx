@@ -1,11 +1,6 @@
-import { 
-  AiFillGithub,
-  //AiFillTwitterCircle
-} from 'react-icons/ai';
-import {
-  FaLinkedinIn,
-  FaItchIo,
-} from 'react-icons/fa';
+import {AiFillGithub} from '@react-icons/all-files/ai/AiFillGithub';
+import {FaLinkedinIn} from '@react-icons/all-files/fa/FaLinkedinIn';
+import {FaItchIo} from '@react-icons/all-files/fa/FaItchIo';
 
 export const HEADER={
   en :{

@@ -1,6 +1,6 @@
-import { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-//modals
+import Preloader from '../components/UIElements/Preloader/Preloader';
 import ModalProjectCard from '../scenes/Projects/ModalProjectCard/ModalProjectCard';
 //scenes
 const Home = lazy(() => import('../scenes/Home/Home'));
@@ -11,6 +11,22 @@ export const routes = {
   PROJECTS: '/projects',
   PROJECT: '/project/:id'
 };
+
+
+const scenes = {
+  Home: lazy(() => import('../scenes/Home/Home')),
+  Projects: lazy(() => import('../scenes/Projects/Projects'))
+};
+
+function LazyScene({ name }) {
+  const Scene = scenes[name];
+  return (
+    <Suspense fallback={<Preloader />}>
+      <Scene />
+    </Suspense>
+  );
+}
+
 
 const BaseRoutes = () => {
   const location = useLocation();

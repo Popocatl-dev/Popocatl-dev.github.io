@@ -1,12 +1,12 @@
 import s from './NavLinks.module.scss';
 import {
   FaGamepad
-} from 'react-icons/fa';
+} from '@react-icons/all-files/fa/FaGamepad';
 
 import {
   GiTriforce
-} from 'react-icons/gi';
-import { CgFileDocument } from 'react-icons/cg';
+} from '@react-icons/all-files/gi/GiTriforce';
+import { CgFileDocument } from '@react-icons/all-files/cg/CgFileDocument';
 import { routes } from '../../../routes/BaseRoutes';
 import { NavLink } from 'react-router-dom';
 import { useLanguage } from '../../../hooks/localHook/localHook';

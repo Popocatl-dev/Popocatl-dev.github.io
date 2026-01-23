@@ -1,7 +1,7 @@
 import s from './Burger.module.scss';
 import {
   GiHamburgerMenu
-} from 'react-icons/gi';
+} from '@react-icons/all-files/gi/GiHamburgerMenu';
 const Burger = ({ onClick }) => {
   return (
     <button onClick={onClick} className={s.burger}>
