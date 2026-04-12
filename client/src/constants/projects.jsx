@@ -23,12 +23,77 @@ export const LABELS = {
 
 export const PROJECTS = [
   {
+    title: 'The Win Zone',
+    image: {
+      src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2mM_Dikx22yzEtOVRgKAsTcCaNlRMI8Z-2A&s',
+    },
+    links: {
+      site: 'https://apps.apple.com/us/app/the-win-zone-casino-slots/id6749226067?l=es-MX',
+    },
+    technologies: [
+      'The Win Zone',
+      'Game Coder Studios',
+      'playStudios',
+      'Unity',
+      'C#',
+      'mobile',
+      'web'
+    ],
+    text : {
+      en: {
+        position : "Technical Artist",
+        description: (<>
+          Casino and slot games inspired by Las Vegas, with more than 90 million players.
+          I'm in charge of the visual implementation, optimization and bug correction.
+        </>)},
+      esp : {
+        position : "Technical Artist",
+        description: (<>
+          Juegos de casino y tragamonedas inspirados en Las Vegas, con mas de 90 millos de jugadores.
+          Estoy a cargo de la implementación del apartado visual, optimización y correción de bugs.
+        </>)}
+
+    }
+  },
+  {
+    title: 'myVegas Slots',
+    image: {
+      src: 'https://play-lh.googleusercontent.com/UCAQ3_P6vPCKfSn7TrVvC1q0jSHkqH1Ey4wCR2FwsHposlaFeHhsRLLcZ3ogMd0jH_Pw6qpBG1cLDdEf2OWtYg',
+    },
+    links: {
+      site: 'https://www.playstudios.com/myvegas-slots/',
+    },
+    technologies: [
+      'myVegasSlots',
+      'Game Coder Studios',
+      'playStudios',
+      'Unity',
+      'C#',
+      'mobile'
+    ],
+    text : {
+      en: {
+        position : "Technical Artist",
+        description: (<>
+          Casino and slot games inspired by Las Vegas, with more than 90 million players.
+          I'm in charge of the visual implementation, optimization and bug correction. 
+        </>)},
+      esp : {
+        position : "Technical Artist",
+        description: (<>
+          Juegos de casino y tragamonedas inspirados en Las Vegas, con mas de 90 millos de jugadores.
+          Estoy a cargo de la implementación del apartado visual, optimización y correción de bugs.
+        </>)}
+
+    }
+  },  
+  {
     title: 'Watertown',
     image: {
       src: 'https://res.cloudinary.com/dnb5g8p7v/image/upload/c_crop,h_598,w_598/v1656891478/portfolio/watertown_qehjg5.jpg',
       },
       links: {
-        site: 'https://big-monster.net/project/water-town/',
+        site: 'https://aplicaciones.sacmex.cdmx.gob.mx/videojuego/',
       },
       technologies: [
         'SACMEX',
@@ -59,7 +124,7 @@ export const PROJECTS = [
       src: 'https://res.cloudinary.com/dnb5g8p7v/image/upload/v1656891480/portfolio/alien_dcfj54.png',
       },
       links: {
-        site: 'https://play.google.com/store/apps/details?id=mx.inoma.mansionalien2&hl=es_AR&gl=US',
+        site: 'https://taktaktak.com/detalle/mansion-alien',
       },
       technologies: [
         'Tak tak tak',
@@ -94,7 +159,7 @@ export const PROJECTS = [
       src: 'https://res.cloudinary.com/dnb5g8p7v/image/upload/c_crop,h_503,w_503/v1656891478/portfolio/mecha_qalorj.jpg',
       },
       links: {
-        site: 'https://big-monster.net/project/mechawaiis/',
+        site: 'https://store.steampowered.com/app/4458200/Mechawaii_LEGENDS/?l=latam',
       },
       technologies: [
         'Big Monster',
@@ -115,12 +180,12 @@ export const PROJECTS = [
         description: (<>
           Runner para móviles, avanza y compra mejoras para tu mecha.
           Programe los controles, el sistema de niveles pseudoaleatorio, powerups, obstaculos y 
-          la tienda. Integre anuncios con Firebase.
+          la tienda.
         </>)}
     }
-  },
+  }
   
-  {
+/*  {
     title: 'Paipote',
     image: {
       src: 'https://res.cloudinary.com/dnb5g8p7v/image/upload/v1657039621/portfolio/paipote_g7gtek.jpg',
@@ -205,6 +270,6 @@ export const PROJECTS = [
         Programé las físicas y todas la mécanicas del juego.
         </>)},
     }
-  }
+  }*/
 ];
 

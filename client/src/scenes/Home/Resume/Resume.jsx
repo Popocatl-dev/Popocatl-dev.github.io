@@ -19,7 +19,7 @@ const Resume = () => {
         >
           <DownloadIcon fill="#fff" />
           <span className={s.downloadText}> {resumeText.download}</span>
-        </Button>
+    </Button>
   );
 };
 
